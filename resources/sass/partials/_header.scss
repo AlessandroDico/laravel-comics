@@ -1,7 +1,3 @@
-header {
-    border-bottom: 1px solid #ebebeb;
-}
-
 .header-top {
     background-color: $mainColor;
     text-align: right;
@@ -28,6 +24,7 @@ header {
 
 
 .header-bottom {
+    // border-bottom: 1px solid #ebebeb;
 
     .header-bottom-container {
         @include dispayFlex(row, space-between, center);
@@ -65,7 +62,7 @@ header {
 
                 &:hover a {
                     color: $mainColor;
-                    border-bottom: 3px solid $mainColor;
+                    border-bottom: 4px solid $mainColor;
                 }
             }
         }
@@ -78,7 +75,7 @@ header {
             font-size: $mainFontSize;
             text-align: right;
             width: 100px;
-            border-bottom: 3px solid $mainColor;
+            border-bottom: 4px solid $mainColor;
         }
     }
 }

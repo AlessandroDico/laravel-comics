@@ -1,0 +1,28 @@
+section.prefooter {
+    background-color: $mainColor;
+    padding: $mainSpace * 2 0;
+    color: $mainTextColor;
+
+    .prefooter-container {
+        @include dispayFlex(row, center, center);
+
+        .prefooter-content {
+            @include dispayFlex(row, space-between, center);
+            padding: 0 $mainSpace;
+
+            .prefooter-img-container {
+                width: 50px;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            p {
+                margin-left: 5px;
+            }
+        }
+    }
+
+}

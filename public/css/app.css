@@ -26,10 +26,6 @@ ul {
   text-transform: uppercase;
 }
 
-header {
-  border-bottom: 1px solid #ebebeb;
-}
-
 .header-top {
   background-color: #0282f9;
   text-align: right;
@@ -85,7 +81,7 @@ header {
 }
 .header-bottom .header-bottom-container .nav-menu li:hover a {
   color: #0282f9;
-  border-bottom: 3px solid #0282f9;
+  border-bottom: 4px solid #0282f9;
 }
 .header-bottom .header-bottom-search input {
   outline: none;
@@ -93,7 +89,7 @@ header {
   font-size: 16px;
   text-align: right;
   width: 100px;
-  border-bottom: 3px solid #0282f9;
+  border-bottom: 4px solid #0282f9;
 }
 
 .jumbotron {
@@ -157,4 +153,33 @@ header {
   color: #fff;
   background-color: #0282f9;
   border: none;
+}
+
+section.prefooter {
+  background-color: #0282f9;
+  padding: 40px 0;
+  color: #fff;
+}
+section.prefooter .prefooter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section.prefooter .prefooter-container .prefooter-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+section.prefooter .prefooter-container .prefooter-content .prefooter-img-container {
+  width: 50px;
+}
+section.prefooter .prefooter-container .prefooter-content .prefooter-img-container img {
+  width: 100%;
+  display: block;
+}
+section.prefooter .prefooter-container .prefooter-content p {
+  margin-left: 5px;
 }

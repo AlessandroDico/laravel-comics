@@ -20,5 +20,5 @@
             </div>
         </div>
     </section>
-
+    @include('partials.prefooter')
 @endsection
