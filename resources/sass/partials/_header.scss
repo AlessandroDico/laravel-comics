@@ -1,8 +1,12 @@
+header {
+    border-bottom: 1px solid #ebebeb;
+}
+
 .header-top {
     background-color: $mainColor;
     text-align: right;
 
-    .header-top-links {
+    .header-top-container {
         padding: 5px 0;
 
         a {
@@ -18,6 +22,64 @@
         i {
             color: $mainTextColor;
             cursor: pointer;
+        }
+    }
+}
+
+
+.header-bottom {
+    height: 110px;
+
+    .header-bottom-container {
+        @include dispayFlex(row, space-between, center);
+
+        .header-logo-container {
+            height: 80px;
+            width: 80px;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .nav-menu{
+
+            ul {
+                @include dispayFlex(row, center, center);
+                // padding-top: 45px;
+            }
+
+            li {
+                padding: 0 $mainSpace / 2;
+
+                a {
+                    display: inline-block;
+                    font-size: $mainFontSize;
+                    color: $secondaryTextColor;
+                    font-weight: bold;
+                    padding: 45px 0;
+                }
+
+                i {
+                    color: $mainColor;
+                }
+
+                &:hover a {
+                    border-bottom: 3px solid $mainColor;
+                }
+            }
+        }
+    }
+
+    .header-bottom-search {
+        input {
+            outline: none;
+            border: none;
+            font-size: $mainFontSize;
+            text-align: right;
+            width: 100px;
+            border-bottom: 3px solid $mainColor;
         }
     }
 }
