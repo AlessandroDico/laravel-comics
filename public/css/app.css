@@ -34,28 +34,20 @@ header {
   background-color: #0282f9;
   text-align: right;
 }
-
 .header-top .header-top-container {
   padding: 5px 0;
 }
-
 .header-top .header-top-container a {
   display: inline-block;
   color: #fff;
   font-size: 13px;
 }
-
 .header-top .header-top-container a:first-child {
   margin-right: 20px;
 }
-
 .header-top .header-top-container i {
   color: #fff;
   cursor: pointer;
-}
-
-.header-bottom {
-  height: 110px;
 }
 
 .header-bottom .header-bottom-container {
@@ -64,28 +56,23 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .header-bottom .header-bottom-container .header-logo-container {
   height: 80px;
   width: 80px;
 }
-
 .header-bottom .header-bottom-container .header-logo-container img {
   width: 100%;
   display: block;
 }
-
 .header-bottom .header-bottom-container .nav-menu ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 .header-bottom .header-bottom-container .nav-menu li {
   padding: 0 10px;
 }
-
 .header-bottom .header-bottom-container .nav-menu li a {
   display: inline-block;
   font-size: 16px;
@@ -93,15 +80,13 @@ header {
   font-weight: bold;
   padding: 45px 0;
 }
-
 .header-bottom .header-bottom-container .nav-menu li i {
   color: #0282f9;
 }
-
 .header-bottom .header-bottom-container .nav-menu li:hover a {
+  color: #0282f9;
   border-bottom: 3px solid #0282f9;
 }
-
 .header-bottom .header-bottom-search input {
   outline: none;
   border: none;
@@ -111,3 +96,13 @@ header {
   border-bottom: 3px solid #0282f9;
 }
 
+.jumbotron {
+  padding: 200px;
+  background-image: url("../images/jumbotron.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+}

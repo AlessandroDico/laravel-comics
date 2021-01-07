@@ -28,7 +28,6 @@ header {
 
 
 .header-bottom {
-    height: 110px;
 
     .header-bottom-container {
         @include dispayFlex(row, space-between, center);
@@ -47,7 +46,6 @@ header {
 
             ul {
                 @include dispayFlex(row, center, center);
-                // padding-top: 45px;
             }
 
             li {
@@ -66,6 +64,7 @@ header {
                 }
 
                 &:hover a {
+                    color: $mainColor;
                     border-bottom: 3px solid $mainColor;
                 }
             }
