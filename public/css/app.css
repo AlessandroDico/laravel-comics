@@ -99,10 +99,6 @@ header {
 .jumbotron {
   padding: 200px;
   background-image: url("../images/jumbotron.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   background-position: top;
   background-repeat: no-repeat;
 }
