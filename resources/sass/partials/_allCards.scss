@@ -1,7 +1,16 @@
 .cards-section {
     background-color: $cardsBgColor;
     color: $mainTextColor;
-    padding: $mainSpace * 3 0;
+    padding: $mainSpace / 2 0;
+
+    h1 {
+        color: $mainTextColor;
+        padding: $mainSpace;
+        background-color: $mainColor;
+        display: inline-block;
+        // transform: translateY(calc(-50% - 60px));;
+        transform: translateY(-50%);
+    }
 
     .cards-container {
         @include dispayFlex(row, center, center);
@@ -10,7 +19,7 @@
         .card {
             @include dispayFlex(column, flex-start, center);
             width: calc(100% / 6 - 10px);
-            min-height: 250px;
+            min-height: 270px;
             margin: 5px;
             padding: 5px;
 
@@ -30,6 +39,18 @@
             p {
                 margin: $mainSpace / 2 0;
             }
+        }
+    }
+
+    .cards-button {
+        text-align: center;
+        margin: $mainSpace 0;
+
+        button {
+            padding: $mainSpace / 2 $mainSpace * 2;
+            color: $mainTextColor;
+            background-color: $mainColor;
+            border: none;
         }
     }
 }

@@ -110,7 +110,14 @@ header {
 .cards-section {
   background-color: #1c1c1c;
   color: #fff;
-  padding: 60px 0;
+  padding: 10px 0;
+}
+.cards-section h1 {
+  color: #fff;
+  padding: 20px;
+  background-color: #0282f9;
+  display: inline-block;
+  transform: translateY(-50%);
 }
 .cards-section .cards-container {
   display: flex;
@@ -125,7 +132,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   width: calc(100% / 6 - 10px);
-  min-height: 250px;
+  min-height: 270px;
   margin: 5px;
   padding: 5px;
 }
@@ -144,4 +151,14 @@ header {
 }
 .cards-section .cards-container .card p {
   margin: 10px 0;
+}
+.cards-section .cards-button {
+  text-align: center;
+  margin: 20px 0;
+}
+.cards-section .cards-button button {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #0282f9;
+  border: none;
 }
