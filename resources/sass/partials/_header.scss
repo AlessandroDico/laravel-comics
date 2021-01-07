@@ -1,0 +1,23 @@
+.header-top {
+    background-color: $mainColor;
+    text-align: right;
+
+    .header-top-links {
+        padding: 5px 0;
+
+        a {
+            display: inline-block;
+            color: $mainTextColor;
+            font-size: $secondaryFontSize / 2;
+        }
+
+        & a:first-child {
+            margin-right: $mainSpace;
+        }
+
+        i {
+            color: $mainTextColor;
+            cursor: pointer;
+        }
+    }
+}
