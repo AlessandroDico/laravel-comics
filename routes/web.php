@@ -23,14 +23,19 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('homepage');
 
+// rotta singolo fumetto
 Route::get('/comic/{id}', function($id) {
     $comicsArray = config('comicsData');
 
-    $singleBook = $comicsArray[$id];
+    if (!array_key_exists($id, $comicsArray)) {
+        abort('404');
+    };
 
+    $singleBook = $comicsArray[$id];
     $data = [
         'book' => $singleBook,
     ];
+
     return view('singleComic', $data);
 
 })->name('singleProduct');
