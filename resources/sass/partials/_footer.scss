@@ -1,0 +1,55 @@
+footer {
+    background-image: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-container {
+    @include dispayFlex(row, space-between, center);
+}
+
+.footer-top-left {
+    @include dispayFlex(column, flex-start, flex-start);
+    width: 50%;
+    padding: $mainSpace * 2 0;
+
+    .footer-top-left-up {
+        @include dispayFlex(row, space-between, flex-start);
+        flex-wrap: wrap;
+        width: 100%;
+
+        .footer-lits {
+            width: calc(100% / 3);
+            color: $mainTextColor;
+            &:last-child {
+                transform: translateY(-70px);
+            }
+
+            a {
+                color: #959595;
+                padding: 5px 0;
+                display: block;
+                font-size: $secondaryFontSize / 2;
+            }
+        }
+    }
+
+    .footer-top-left-down {
+        font-size: $secondaryFontSize / 2;
+        color: #959595;
+
+        a {
+            color : $mainColor;
+        }
+    }
+}
+
+.footer-top-right {
+    width: 50%;
+    height: 540px;
+    background-image: url('../images/dc-logo-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

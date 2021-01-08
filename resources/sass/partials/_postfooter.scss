@@ -1,0 +1,16 @@
+section.section-postfooter {
+    background-color: #303030;
+    padding: $mainSpace 0;
+
+    .postfooter-left{
+        button.pf-button {
+            color: $mainTextColor;
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: bold;
+            border: 3px solid $mainColor;
+            padding: $mainSpace / 2;
+            letter-spacing: 1.2px;
+        }
+    }
+}

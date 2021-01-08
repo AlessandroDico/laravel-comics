@@ -25,5 +25,6 @@
         <footer>
             @include('partials.footer')
         </footer>
+        @include('partials.postfooter')
     </body>
 </html>
