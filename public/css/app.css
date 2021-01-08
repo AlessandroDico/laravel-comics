@@ -169,6 +169,20 @@ ul {
   border: none;
 }
 
+.post-card-row {
+  background-color: #0282f9;
+  padding: 40px 0;
+  position: relative;
+}
+.post-card-row .post-card-image-container {
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid #fff;
+}
+.post-card-row .post-card-image-container img {
+  display: block;
+}
+
 section.prefooter {
   background-color: #0282f9;
   padding: 40px 0;

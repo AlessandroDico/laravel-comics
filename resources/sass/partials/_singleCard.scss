@@ -1,0 +1,15 @@
+.post-card-row {
+    background-color: $mainColor;
+    padding: $mainSpace * 2 0;
+    position: relative;
+
+    .post-card-image-container {
+        position: absolute;
+        bottom: 10px;
+        border: 1px solid #fff;
+
+        img {
+            display: block;
+        }
+    }
+}
