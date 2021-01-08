@@ -249,7 +249,13 @@ section.section-postfooter {
   background-color: #303030;
   padding: 20px 0;
 }
-section.section-postfooter .postfooter-left button.pf-button {
+section.section-postfooter .postfooter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section.section-postfooter .postfooter-container .postfooter-left button.pf-button {
   color: #fff;
   background-color: transparent;
   font-size: 20px;
@@ -257,4 +263,24 @@ section.section-postfooter .postfooter-left button.pf-button {
   border: 3px solid #0282f9;
   padding: 10px;
   letter-spacing: 1.2px;
+}
+section.section-postfooter .postfooter-container .postfooter-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section.section-postfooter .postfooter-container .postfooter-right .pf-write {
+  color: #0282f9;
+  font-size: 20px;
+  margin-right: 10px;
+}
+section.section-postfooter .postfooter-container .postfooter-right .pf-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section.section-postfooter .postfooter-container .postfooter-right .pf-icons-container .single-icon {
+  margin: 0 10px;
 }

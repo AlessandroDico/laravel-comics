@@ -2,6 +2,9 @@ section.section-postfooter {
     background-color: #303030;
     padding: $mainSpace 0;
 
+.postfooter-container {
+    @include dispayFlex (row, space-between, center);
+
     .postfooter-left{
         button.pf-button {
             color: $mainTextColor;
@@ -13,4 +16,23 @@ section.section-postfooter {
             letter-spacing: 1.2px;
         }
     }
+
+    .postfooter-right {
+        @include dispayFlex (row, space-between, center);
+
+        .pf-write {
+            color: $mainColor;
+            font-size: 20px;
+            margin-right: $mainSpace / 2;
+        }
+
+        .pf-icons-container {
+            @include dispayFlex (row, space-between, center);
+
+            .single-icon {
+                margin: 0 $mainSpace / 2;
+            }
+        }
+    }
+}
 }

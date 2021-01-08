@@ -6,7 +6,26 @@
                     sign-up now!
                 </button>
             </div>
-            <div class="postfooter-right"></div>
+            <div class="postfooter-right">
+                <div class="pf-write text-uppercase">Follow us</div>
+                <div class="pf-icons-container">
+                    <div class="single-icon">
+                        <img src="{{ asset('images/footer-facebook.png') }}" alt="">
+                    </div>
+                    <div class="single-icon">
+                        <img src="{{ asset('images/footer-twitter.png') }}" alt="">
+                    </div>
+                    <div class="single-icon">
+                        <img src="{{ asset('images/footer-youtube.png') }}" alt="">
+                    </div>
+                    <div class="single-icon">
+                        <img src="{{ asset('images/footer-pinterest.png') }}" alt="">
+                    </div>
+                    <div class="single-icon">
+                        <img src="{{ asset('images/footer-periscope.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
