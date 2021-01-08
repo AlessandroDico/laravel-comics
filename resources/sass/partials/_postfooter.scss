@@ -31,6 +31,10 @@ section.section-postfooter {
 
             .single-icon {
                 margin: 0 $mainSpace / 2;
+
+                a {
+                    display: block;
+                }
             }
         }
     }

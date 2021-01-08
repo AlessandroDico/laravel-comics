@@ -21,4 +21,16 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('homepage');
+
+Route::get('/comic/{id}', function($id) {
+    $comicsArray = config('comicsData');
+
+    $singleBook = $comicsArray[$id];
+
+    $data = [
+        'book' => $singleBook,
+    ];
+    return view('singleComic', $data);
+
+})->name('singleProduct');

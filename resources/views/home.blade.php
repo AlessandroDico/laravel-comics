@@ -6,12 +6,14 @@
         <div class="container">
             <h1 class="text-uppercase">current series</h1>
             <div class="cards-container">
-                @foreach ($comics as $book)
+                @foreach ($comics as $key => $book)
                     <div class="card">
-                        <div class="book-image-container">
-                            <img src="{{ $book['thumb'] }}" alt="{{ $book['series'] }}">
-                        </div>
-                        <p class="text-uppercase">{{ $book['series'] }}</p>
+                        <a href="{{ route('singleProduct', ['id' => $key]) }}">
+                            <div class="book-image-container">
+                                <img src="{{ $book['thumb'] }}" alt="{{ $book['series'] }}">
+                            </div>
+                            <p class="text-uppercase">{{ $book['series'] }}</p>
+                        </a>
                     </div>
                 @endforeach
             </div>

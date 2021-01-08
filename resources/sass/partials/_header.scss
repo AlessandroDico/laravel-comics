@@ -32,10 +32,12 @@
         .header-logo-container {
             height: 80px;
             width: 80px;
-
-            img {
-                width: 100%;
+            a {
                 display: block;
+                img {
+                    width: 100%;
+                    display: block;
+                }
             }
         }
 
@@ -54,6 +56,7 @@
                     color: $secondaryTextColor;
                     font-weight: bold;
                     padding: 45px 0;
+                    border-bottom: 4px solid transparent;
                 }
 
                 i {

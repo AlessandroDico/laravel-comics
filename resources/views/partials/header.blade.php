@@ -11,7 +11,9 @@
     <div class="container">
         <div class="header-bottom-container">
             <div class="header-logo-container">
-                <img src="{{ asset('images/dc-logo.png') }}" alt="Logo DC comics">
+                <a href="{{ route('homepage') }}">
+                    <img src="{{ asset('images/dc-logo.png') }}" alt="Logo DC comics">
+                </a>
             </div>
             <div class="nav-menu">
                 <ul>

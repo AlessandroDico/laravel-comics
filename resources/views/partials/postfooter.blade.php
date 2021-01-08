@@ -10,19 +10,29 @@
                 <div class="pf-write text-uppercase">Follow us</div>
                 <div class="pf-icons-container">
                     <div class="single-icon">
-                        <img src="{{ asset('images/footer-facebook.png') }}" alt="">
+                        <a href="#">
+                            <img src="{{ asset('images/footer-facebook.png') }}" alt="">
+                        </a>
                     </div>
                     <div class="single-icon">
-                        <img src="{{ asset('images/footer-twitter.png') }}" alt="">
+                        <a href="#">
+                            <img src="{{ asset('images/footer-twitter.png') }}" alt="">
+                        </a>
                     </div>
                     <div class="single-icon">
-                        <img src="{{ asset('images/footer-youtube.png') }}" alt="">
+                        <a href="#">
+                            <img src="{{ asset('images/footer-youtube.png') }}" alt="">
+                        </a>
                     </div>
                     <div class="single-icon">
-                        <img src="{{ asset('images/footer-pinterest.png') }}" alt="">
+                        <a href="#">
+                            <img src="{{ asset('images/footer-pinterest.png') }}" alt="">
+                        </a>
                     </div>
                     <div class="single-icon">
-                        <img src="{{ asset('images/footer-periscope.png') }}" alt="">
+                        <a href="#">
+                            <img src="{{ asset('images/footer-periscope.png') }}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
