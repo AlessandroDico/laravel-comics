@@ -26,6 +26,7 @@
                                 </span>
                                 <span class="check-availability">
                                     Check-Availability
+                                    <i class="fas fa-caret-down"></i>
                                 </span>
                             </div><div class="shop-info-bottom">
                                 <p class="comic-description-paragraph">
@@ -40,6 +41,54 @@
                             <img src="{{ asset('images/adv.jpg') }}" alt="advertising image">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="comic-spec-table">
+            <div class="small-container">
+                <div class="spec-left">
+                    <h2>Talent</h2>
+                    <ul>
+                        <li>
+                            <div class="spec-title">
+                                <h3>Art by:</h3>
+                            </div>
+                            <div class="artists">
+                                @foreach ($book['artists'] as $artist)
+                                    <span>{{ $artist }}</span>@if (!$loop->last),@endif
+                                        {{-- scritto attaccato per non avere lo spazio in pagina --}}
+                                @endforeach
+                            </div>
+                        </li>
+                        <li>
+                            <div class="spec-title">
+                                <h3>Written by:</h3>
+                            </div>
+                            <div class="writers">
+                                @foreach ($book['writers'] as $writer)
+                                    <span>{{ $writer }}</span>@if (!$loop->last),@endif
+                                        {{-- scritto attaccato per non avere lo spazio in pagina --}}
+                                @endforeach
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="spec-right">
+                    <h2>Specs</h2>
+                    <ul>
+                        <li>
+                            <h3>Series:</h3>
+                            <span class="text-uppercase">{{ $book['series'] }}</span>
+                        </li>
+                        <li>
+                            <h3>U.S. Price:</h3>
+                            <span class="dark-text">{{ $book['price'] }}</span>
+                        </li>
+                        <li>
+                            <h3>On Sale Date:</h3>
+                            <span class="dark-text">{{ $book['sale_date'] }}</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

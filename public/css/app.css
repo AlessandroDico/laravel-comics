@@ -27,6 +27,12 @@ ul {
   margin: auto;
 }
 
+.small-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -205,6 +211,7 @@ ul {
   background-color: #55ba59;
   margin: 20px 0;
   color: #fff;
+  border-bottom: 1px solid #357739;
 }
 .comic-description-container .comic-description-left .shop-info-top > span {
   display: inline-block;
@@ -238,6 +245,49 @@ ul {
 .comic-description-container .comic-description-right .description-img-container img {
   display: block;
   width: 100%;
+}
+
+.comic-spec-table {
+  background-color: #f6f6f6;
+  padding: 20px 0;
+}
+.comic-spec-table .spec-left, .comic-spec-table .spec-right {
+  float: left;
+  width: 50%;
+}
+.comic-spec-table .spec-left h2, .comic-spec-table .spec-right h2 {
+  color: #003f5e;
+  padding: 20px 0;
+}
+.comic-spec-table .spec-left h3, .comic-spec-table .spec-right h3 {
+  color: #003f5e;
+  width: 170px;
+  font-size: 16px;
+}
+.comic-spec-table .spec-left ul li, .comic-spec-table .spec-right ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-top: 1px solid #e3e3e3;
+}
+.comic-spec-table .spec-left ul li:last-child, .comic-spec-table .spec-right ul li:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+.comic-spec-table .spec-left ul li span, .comic-spec-table .spec-right ul li span {
+  font-size: 14px;
+  color: #0282f9;
+}
+.comic-spec-table .spec-left ul li span.dark-text, .comic-spec-table .spec-right ul li span.dark-text {
+  color: #003f5e;
+}
+.comic-spec-table .spec-left {
+  padding-right: 40px;
+}
+
+.spec-right {
+  padding-left: 40px;
 }
 
 section.prefooter {

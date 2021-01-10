@@ -20,7 +20,7 @@
     @include dispayFlex(row, space-between, flex-start);
     padding: $mainSpace * 2 0;
     h1 {
-        color: #003f5e;
+        color: $singlePagTextColor;
         font-size: 38px;
     }
     .comic-description-left {
@@ -31,6 +31,7 @@
             background-color: #55ba59;
             margin: $mainSpace 0;
             color: $mainTextColor;
+            border-bottom: 1px solid #357739;
 
             & > span {
                 display: inline-block;
@@ -73,4 +74,51 @@
             }
         }
     }
+}
+
+.comic-spec-table {
+    background-color: #f6f6f6;
+    padding: $mainSpace 0;
+
+    .spec-left, .spec-right {
+        float: left;
+        width: 50%;
+
+        h2 {
+            color: $singlePagTextColor;
+            padding: $mainSpace 0;
+        }
+
+        h3 {
+            color: $singlePagTextColor;
+            width: 170px;
+            font-size: $mainFontSize;
+        }
+
+        ul {
+            li {
+                @include dispayFlex(row, flex-start, flex-start);
+                padding: $mainSpace / 2 0;
+                border-top: 1px solid #e3e3e3;
+            }
+            & li:last-child {
+                border-bottom: 1px solid #e3e3e3;
+            }
+            & li span {
+                font-size: 14px;
+                color: $mainColor;
+            }
+            & li span.dark-text {
+                color: $singlePagTextColor;
+            }
+        }
+    }
+
+    .spec-left {
+        padding-right: $mainSpace * 2;
+    }
+}
+
+    .spec-right {
+        padding-left: $mainSpace * 2;
 }

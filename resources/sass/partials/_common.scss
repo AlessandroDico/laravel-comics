@@ -27,6 +27,12 @@ ul {
     margin: auto;
 }
 
+.small-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
