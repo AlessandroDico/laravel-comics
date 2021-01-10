@@ -183,6 +183,63 @@ ul {
   display: block;
 }
 
+.comic-description-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+.comic-description-container h1 {
+  color: #003f5e;
+  font-size: 38px;
+}
+.comic-description-container .comic-description-left {
+  padding-right: 20px;
+}
+.comic-description-container .comic-description-left .shop-info-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #55ba59;
+  margin: 20px 0;
+  color: #fff;
+}
+.comic-description-container .comic-description-left .shop-info-top > span {
+  display: inline-block;
+  padding: 20px 10px;
+  flex-grow: 1;
+  text-align: center;
+}
+.comic-description-container .comic-description-left .shop-info-top > span:first-child {
+  flex-grow: 2;
+  text-align: left;
+}
+.comic-description-container .comic-description-left .shop-info-top > span:first-child > span:first-child {
+  color: #bafd9c;
+}
+.comic-description-container .comic-description-left .shop-info-top > span:nth-child(2) {
+  border-right: 1px solid #357739;
+  color: #bafd9c;
+}
+.comic-description-container .comic-description-left .shop-info-bottom p {
+  line-height: 1.6;
+}
+.comic-description-container .comic-description-right {
+  padding-left: 20px;
+  text-align: right;
+}
+.comic-description-container .comic-description-right .description-img-container {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+}
+.comic-description-container .comic-description-right .description-img-container img {
+  display: block;
+  width: 100%;
+}
+
 section.prefooter {
   background-color: #0282f9;
   padding: 40px 0;

@@ -13,3 +13,64 @@
         }
     }
 }
+
+
+
+.comic-description-container {
+    @include dispayFlex(row, space-between, flex-start);
+    padding: $mainSpace * 2 0;
+    h1 {
+        color: #003f5e;
+        font-size: 38px;
+    }
+    .comic-description-left {
+        padding-right: $mainSpace;
+
+        .shop-info-top {
+            @include dispayFlex(row, space-between, center);
+            background-color: #55ba59;
+            margin: $mainSpace 0;
+            color: $mainTextColor;
+
+            & > span {
+                display: inline-block;
+                padding: $mainSpace $mainSpace / 2;
+                flex-grow: 1;
+                text-align: center;
+            }
+            & > span:first-child {
+                flex-grow: 2;
+                text-align: left;
+                & > span:first-child {
+                    color: #bafd9c;
+                }
+
+            }
+            & > span:nth-child(2) {
+                border-right: 1px solid #357739;
+                color: #bafd9c;
+            }
+        }
+        .shop-info-bottom {
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .comic-description-right {
+        padding-left: $mainSpace;
+        text-align: right;
+
+        .description-img-container {
+            display: inline-block;
+            width: 300px;
+            height: 250px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
