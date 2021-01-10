@@ -249,7 +249,13 @@ ul {
 
 .comic-spec-table {
   background-color: #f6f6f6;
-  padding: 20px 0;
+  padding: 20px 0 120px 0;
+}
+.comic-spec-table .spec-left {
+  padding-right: 40px;
+}
+.comic-spec-table .spec-right {
+  padding-left: 40px;
 }
 .comic-spec-table .spec-left, .comic-spec-table .spec-right {
   float: left;
@@ -282,14 +288,64 @@ ul {
 .comic-spec-table .spec-left ul li span.dark-text, .comic-spec-table .spec-right ul li span.dark-text {
   color: #003f5e;
 }
-.comic-spec-table .spec-left {
-  padding-right: 40px;
+
+.comic-spec-icons {
+  background-color: #f6f6f6;
+  border-top: 1px solid #e3e3e3;
+}
+.comic-spec-icons .spec-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.comic-spec-icons .spec-icons-container :last-child.spec-card-icon {
+  border-right: 1px solid #e3e3e3;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: calc(100% / 4 - 2px);
+  border-left: 1px solid #e3e3e3;
+  padding: 10px;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon h4 {
+  font-size: 14px;
+  color: #003f5e;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon .icon-container {
+  width: 37px;
+  height: 37px;
+  background-image: url("../images/cta-icons.png");
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(1) .icon-container {
+  background-position: 0px 0;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(1):hover .icon-container {
+  background-position: 0px 37px;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(2) .icon-container {
+  background-position: 37px 0;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(2):hover .icon-container {
+  background-position: 37px 37px;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(3) .icon-container {
+  background-position: 74px 0;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(3):hover .icon-container {
+  background-position: 74px 37px;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(4) .icon-container {
+  background-position: 111px 0;
+}
+.comic-spec-icons .spec-icons-container .spec-card-icon:nth-child(4):hover .icon-container {
+  background-position: 111px 37px;
 }
 
-.spec-right {
-  padding-left: 40px;
-}
-
+/**/
 section.prefooter {
   background-color: #0282f9;
   padding: 40px 0;

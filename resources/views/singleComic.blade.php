@@ -92,5 +92,27 @@
                 </div>
             </div>
         </div>
+        <div class="comic-spec-icons">
+            <div class="small-container">
+                <div class="spec-icons-container">
+                    <div class="spec-card-icon">
+                        <h4 class="text-uppercase">digital comics</h4>
+                        <div class="icon-container"></div>
+                    </div>
+                    <div class="spec-card-icon">
+                        <h4 class="text-uppercase">digital comics</h4>
+                        <div class="icon-container"></div>
+                    </div>
+                    <div class="spec-card-icon">
+                        <h4 class="text-uppercase">digital comics</h4>
+                        <div class="icon-container"></div>
+                    </div>
+                    <div class="spec-card-icon">
+                        <h4 class="text-uppercase">digital comics</h4>
+                        <div class="icon-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
